@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image d'arrière-plan -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop" />
+
+    <!-- Boutons alignés horizontalement -->
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Ajouter"
+        android:src="@drawable/add"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/btnViewOrders"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Voir les commandes"
+        android:src="@drawable/file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toEndOf="@id/btnViewOrders"
+        app:layout_constraintTop_toTopOf="@id/btnAdd" />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Déconnexion"
+        android:src="@drawable/dec"
+        app:layout_constraintStart_toEndOf="@id/btnViewOrders"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Conteneur des fragments -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
