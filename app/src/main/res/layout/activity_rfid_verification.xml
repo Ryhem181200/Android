@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_rfid_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place the RFID card near your phone"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/tv_rfid_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFID Code: Not Detected"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_rfid_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_skip_rfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip RFID for Now"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="173dp"
+        android:layout_below="@+id/tv_rfid_code"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="311dp"
+        app:srcCompat="@drawable/rfid_card" />
+
+</RelativeLayout>

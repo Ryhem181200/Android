@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Employee Name -->
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Employee Phone -->
+    <TextView
+        android:id="@+id/tv_employee_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: 123-456-7890"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Employee Date of Birth -->
+    <TextView
+        android:id="@+id/tv_employee_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth: 01/01/1990"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Employee Card ID -->
+    <TextView
+        android:id="@+id/tv_employee_card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card ID: 12345"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/btn_edit_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btn_delete_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
